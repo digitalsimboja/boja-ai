@@ -86,6 +86,7 @@ spacy-legacy==3.0.12
 spacy-loggers==1.0.4
 srsly==2.4.6
 streamlit==1.22.0
+streamlit-chat==0.0.2.2
 tenacity==8.2.2
 tensorboard==2.12.3
 tensorboard-data-server==0.7.0
