@@ -33,3 +33,33 @@ Through building this project, I learned a lot about natural language processing
     spaCy
     Pinecone vector databases
     OpenAI's GPT-3 API
+
+## Setup
+
+Create a virtual environment and activate it
+
+```
+python3 -m venv ai
+source ai/bin/activate
+```
+
+Clone the repository
+
+```
+git clone https://github.com/digitalsimboja/boja-ai.git
+cd boja-ai
+```
+
+## Installation
+
+Install the dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+## Run the app
+
+```
+streamlit run src/app.py
+```
