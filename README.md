@@ -63,3 +63,5 @@ pip install -r requirements.txt
 ```
 streamlit run src/app.py
 ```
+
+Deployed app available at: https://digitalsimboja-boja-ai-srcapp-w4t22k.streamlit.app/
