@@ -80,6 +80,9 @@ scipy==1.10.1
 six==1.16.0
 smart-open==6.3.0
 smmap==5.0.0
+spacy==3.5.2
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
 srsly==2.4.6
 streamlit==1.22.0
 streamlit-chat==0.0.2.2

@@ -1,5 +1,7 @@
 from dotenv import load_dotenv
 import os
+import spacy
+from spacy.matcher import Matcher
 import streamlit as st
 from streamlit_chat import message
 import openai
@@ -28,7 +30,7 @@ def generate_response(prompt):
     return response.choices[0].text if response.choices else ''
 
 
-st.title("BojaAI Self-service ChatBot")
+st.title("Evveland Self-service ")
 if "generated" not in st.session_state:
     st.session_state["generated"] = []
 
@@ -38,7 +40,7 @@ if "past" not in st.session_state:
 
 def get_text():
     input_text = st.text_input(
-        "You", "Welcome to BojaAI Self-service", key="user_input")
+        "You", "Welcome, how may I help you today?", key="user_input")
     return input_text
 
 
