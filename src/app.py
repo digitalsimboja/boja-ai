@@ -1,7 +1,5 @@
 from dotenv import load_dotenv
 import os
-import spacy
-from spacy.matcher import Matcher
 import streamlit as st
 from streamlit_chat import message
 import openai
