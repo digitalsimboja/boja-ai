@@ -1,9 +1,9 @@
 from dotenv import load_dotenv
 import os
 import streamlit as st
-from streamlit_chat import message
 import openai
 import pinecone
+from streamlit_chat import message
 
 # Load environment variables from .env file
 load_dotenv()
@@ -28,12 +28,12 @@ def generate_response(prompt):
     return response.choices[0].text if response.choices else ''
 
 
-st.title("Evveland Self-service ")
+st.title("BojaAI Semantic Search Engine ")
 if "generated" not in st.session_state:
     st.session_state["generated"] = []
 
 if "past" not in st.session_state:
-    st.session_state["past"] = []
+    st.session_state["past"] = [] 
 
 
 def get_text():
@@ -46,8 +46,8 @@ user_input = get_text()
 
 if user_input:
     output = generate_response(user_input)
-    st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
+    st.session_state.past.append(user_input)
 
 if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
