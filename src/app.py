@@ -4,9 +4,6 @@ import streamlit as st
 import openai
 import pinecone
 from streamlit_chat import message
-import spacy
-from spacy.language import Language
-from spacy.tokens import Doc
 
 
 # Load environment variables from .env file
